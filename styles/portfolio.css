@@ -219,22 +219,53 @@ textarea {
 }
 /* responsive for mobile device */
 @media screen and (max-width:576px) {
-    .skills-container, .resume-container, footer{
+    .header{
+        background-image: none;
+    }
+    .skills-container, .resume-container, footer, .about-info-container,.banner, nav{
         flex-direction: column;
     }
-    #what-i-do-description{
+    #what-i-do-description, .banner{
         padding: 20px;
     }
     .skill{
         padding: 10px;
     }
-    footer{
+    footer, .about{
         padding: 10px;
     }
-    .footer-column{
+    .footer-column, .profile-pic{
         width: 100%;
     }
     .contact input[type="text"], .contact input[type="email"], textarea{
         width: 80%;
+    }
+    .btn-primary{
+        margin-bottom: 10px;
+    }
+}
+
+/* responsive for medium device */
+@media screen and (min-width:576px) and (max-width:992px) {
+    footer{
+        padding: 30px;
+    }
+    .btn-primary{
+        margin-bottom: 10px;
+    }
+    .contact input[type="text"], .contact input[type="email"], textarea{
+        width: 80%;
+    }
+    #what-i-do-description{
+        padding: 20px;
+    }
+    .skills-container {
+        flex-direction: column;
+    }
+    nav{
+        margin: 5px;
+    }
+    .banner{
+        flex-direction: column;
     }
 }
