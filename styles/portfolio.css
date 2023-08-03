@@ -219,7 +219,7 @@ textarea {
 }
 /* responsive for mobile device */
 @media screen and (max-width:576px) {
-    .skills-container, .resume-container{
+    .skills-container, .resume-container, footer{
         flex-direction: column;
     }
     #what-i-do-description{
@@ -227,5 +227,14 @@ textarea {
     }
     .skill{
         padding: 10px;
+    }
+    footer{
+        padding: 10px;
+    }
+    .footer-column{
+        width: 100%;
+    }
+    .contact input[type="text"], .contact input[type="email"], textarea{
+        width: 80%;
     }
 }
